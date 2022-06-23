@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOOT THAT HEAD</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="header">
+            <img src="header.png">
+        </div>
+    </header>
+    <main>
+        <div class="targets_container">
+            <h2 id="header2">"CHOOSE YOUR TARGET"</h2>
+            <br>
+            <div class="targets">
+                <ul>
+                    <li>
+                        <img src="darkseid.jpg" class="photos" id="photo1"><br>
+                        <button type="button" class="buttons" id="target1_button">DARKSEID</button><br>
+                    </li>
+                    <li>
+                        <img src="joker.jpg" class="photos" id="photo2"><br>
+                        <button type="button" class="buttons" id="target2_button">THE JOKER</button><br>
+                    </li>
+                    <li>
+                        <img src="thanos.jpg" class="photos" id="photo3"><br>
+                        <button type="button" class="buttons" id="target3_button">THANOS</button><br>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <img src="lebron.jpg" class="photos" id="photo4"><br>
+                        <button type="button" class="buttons" id="target4_button">LEBRON JAMES</button><br>
+                    </li>
+                    <li>
+                        <img src="cardo.jpg" class="photos" id="photo5"><br>
+                        <button type="button" class="buttons" id="target5_button">CARDO DALISAY</button><br>
+                    </li>
+                    <li>
+                        <img src="therock.jpg" class="photos" id="photo6"><br>
+                        <button type="button" class="buttons" id="target6_button">DWAYNE JOHNSON</button><br>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--if joke was selected this will be shown-->
+        <div id="target2_modal" class="modal">
+            <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" id="close_target2">&times;</span>
+                <h2>SHOOT THAT HEAD</h2>
+            </div>
+            <div class="modal-body">
+                <p>"THE JOKER"</p>
+                <p class="targets_description">
+                    No name strikes terror into the hearts of Gotham’s citizens quite like the Joker. In a city overrun with larger-than-life 
+                    criminals, the always-laughing villain stands alone. A complete psychopath with no moral compass whatsoever, the Joker, 
+                    whose real name and identity remain completely unknown, is characterized by his chalk-white skin, green hair and a 
+                    permanent rictus grin stretched across his face. But there isn’t a single thing funny about this particular clown,
+                    who only finds humor in the suffering of others.</p>
+                
+                <p class="targets_description">The Joker first appeared in Gotham City around the same time that the Batman arrived on the 
+                    scene, and since their very first confrontation, the Clown Prince of Crime has been the Dark Knight’s most formidable 
+                    nemesis. While Batman represents justice and order, the Joker is his complete opposite, seeing himself as an agent of 
+                    chaos, the living embodiment of the cruel randomness of fate. The Joker’s psychosis causes his personality to shift between 
+                    goofy prankster and mass murderer on a dime, making it impossible to predict his next move. It’s this unpredictability that
+                    really makes him such a dangerous opponent.</p>
+                    <br>
+                <a href="joker.html">
+                <div class="modalButton_container"><button type="button" class="modal_buttons" id="target2_modal_button">PLAY</button><br></div>
+                </a>
+        </div>
+          <div class="modal-footer">
+            <h3>THE CLOWN PRINCE OF CRIME</h3>
+            </div>
+            </div>
+        </div>
+
+        <!--if darkseid was selected this will be shown-->
+        <div id="target1_modal" class="modal">
+            <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" id="close_target1">&times;</span>
+                <h2>SHOOT THAT HEAD</h2>
+            </div>
+            <div class="modal-body">
+                <p>"DARK SEID"</p>
+                <p class="targets_description">
+                    Darkseid (pronounced Dark-side) is a new god of the Fourth World, one of the most powerful beings in the 
+                    DC Multiverse. As the tyrannical ruler of Apokolips, he frequently comes into conflict with Superman. </p>
+                
+                <p class="targets_description">Darkseid's goal was to eliminate all free will from the universe and reshape it
+                    into his own image. To this end, he sought to unravel the mysterious Anti-Life Equation, which gives its user 
+                    complete control over the thoughts and emotions of all living beings in the universe. Darkseid intended to probe 
+                    the minds of every human in order to piece together the Equation. This has caused him to clash with many superheroes 
+                    of the DC Universe, notably, the Kryptonian Superman. Darkseid worked behind-the-scenes, using superpowered minions in
+                    his schemes to overthrow Earth, including working through Intergang, a crime syndicate which employs Apokoliptian 
+                    technology and later morphed into a religious cult that worships Darkseid as the god of Evil. </p>
+                    <br>
+                <a href="darkseid.html">
+                <div class="modalButton_container"><button type="button" class="modal_buttons" id="target1_modal_button">PLAY</button><br></div>
+                </a>
+        </div>
+          <div class="modal-footer">
+            <h3>THE NEW GOD OF FOURTH WORLD</h3>
+            </div>
+            </div>
+        </div>
+
+        <!--if thanos was selected this will be shown-->
+        <div id="target3_modal" class="modal">
+            <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" id="close_target3">&times;</span>
+                <h2>SHOOT THAT HEAD</h2>
+            </div>
+            <div class="modal-body">
+                <p>"THANOS"</p>
+                <p class="targets_description">
+                    Thanos was a genocidal warlord from Titan, whose objective was to bring stability to the universe by wiping 
+                    out half of all life at every level, as he believed its massive population would inevitably use up the universe's 
+                    entire supply of resources and perish. To complete this goal, Thanos set about hunting down all the Infinity Stones, 
+                    being confident that the combined force of the Stones would grant him sufficient power. Thanos forged alliances with 
+                    Loki and Ronan the Accuser in order to track down some of the Stones. However, both alliances cost Thanos much of his 
+                    resources, including the Mind Stone and the loyalty of his daughters, Gamora and Nebula. Fed up with all his subordinates'
+                    ongoing failures, Thanos made the decision to seek and procur the Stones himself, and he began by forcing Eitri to create
+                    the Infinity Gauntlet for him so that he would be able to wield the power of the Stones safely. </p>
+                    <br>
+                <a href="thanos.html">
+                <div class="modalButton_container"><button type="button" class="modal_buttons" id="target3_modal_button">PLAY</button><br></div>
+                </a>
+        </div>
+          <div class="modal-footer">
+            <h3>THE MAD TITAN</h3>
+            </div>
+            </div>
+        </div>
+
+        <!--if lebron was selected this will be shown-->
+        <div id="target4_modal" class="modal">
+            <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" id="close_target4">&times;</span>
+                <h2>SHOOT THAT HEAD</h2>
+            </div>
+            <div class="modal-body">
+                <p>"LEBRON JAMES"</p>
+                <p class="targets_description">
+                    Lebron James is an American professional basketball player for the Los Angeles Lakers of the National Basketball
+                    Association (NBA). Nicknamed "King James", he is widely considered one of the greatest players in NBA history and is
+                    often compared to Michael Jordan in debates over the greatest basketball player ever. 
+                    James has won four NBA championships, four NBA MVP awards, four NBA Finals MVP awards, three All-Star MVP awards, 
+                    and two Olympic gold medals. James has scored the most points in the playoffs, the second most career points, and has 
+                    the seventh most career assists. He has been selected an NBA All-Star 18 times, to the All-NBA Team a record 17 times, 
+                    and to the NBA All-Defensive First Team five times. He has competed in ten NBA Finals, the third most all time, including 
+                    eight consecutively between 2011 and 2018. In 2021, James was selected to the NBA 75th Anniversary Team.  </p>
+                    <br>
+                <a href="lebron.html">
+                <div class="modalButton_container"><button type="button" class="modal_buttons" id="target4_modal_button">PLAY</button><br></div>
+                </a>
+        </div>
+          <div class="modal-footer">
+            <h3>KING JAMES</h3>
+            </div>
+            </div>
+        </div>
+
+        <!--if cardo was selected this will be shown-->
+        <div id="target5_modal" class="modal">
+            <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" id="close_target5">&times;</span>
+                <h2>SHOOT THAT HEAD</h2>
+            </div>
+            <div class="modal-body">
+                <p>"CARDO DALISAY"</p>
+                <p class="targets_description">
+                    Ricardo B. Dalisay legally named Ricardo De Leon or Cardo De Leon, or simply known as Cardo Dalisay, 
+                    is the main protagonist of 2015 longest running action crime drama Philippine television series, FPJ's Ang Probinsyano.
+                     He is the twin brother of the no longer alive Ador De Leon, who serves as a minor protagonist until he was shot and 
+                     killed by a corrupt policeman Joaquin Tuazon in the fourth episode before Cardo was the main protagonist of entire 
+                     series.  </p>
+                    <br>
+                <a href="cardo.html">
+                <div class="modalButton_container"><button type="button" class="modal_buttons" id="target5_modal_button">PLAY</button><br></div>
+                </a>
+        </div>
+          <div class="modal-footer">
+            <h3>DALISAY</h3>
+            </div>
+            </div>
+        </div>
+
+        <!--if therock was selected this will be shown-->
+        <div id="target6_modal" class="modal">
+            <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" id="close_target6">&times;</span>
+                <h2>SHOOT THAT HEAD</h2>
+            </div>
+            <div class="modal-body">
+                <p>"DWAYNE JOHNSON"</p>
+                <p class="targets_description">
+                    Dwayne Douglas Johnson, also known by his ring name The Rock, is an American actor, businessman, and former 
+                    professional wrestler. Widely regarded as one of the greatest professional wrestlers of all time, he wrestled for 
+                    WWE for eight years prior to pursuing an acting career</p>
+                    <br>
+                <a href="theRock.html">
+                <div class="modalButton_container"><button type="button" class="modal_buttons" id="target6_modal_button">PLAY</button><br></div>
+                </a>
+        </div>
+          <div class="modal-footer">
+            <h3>THE ROCK</h3>
+            </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div class="icons">
+            <p class="footerText"><b>FOLLOW ME:</b></p><br>
+            <a href="https://www.facebook.com/rj.sanjuan.8">
+                <i class="fa fa-facebook fa-3x" id="facebook"></i>
+            </a>
+                
+            <a href="https://www.instagram.com/rj.sanjuan.8/">
+                <i class="fa fa-instagram fa-3x" id="instagram"></i>
+            </a>
+
+            <a href="https://www.twitter.com">
+                <i class="fa fa-twitter fa-3x" id="twitter"></i>
+            </a>
+            <br><br><br><br>
+            <p class="footerText"><b>CONTACT ME:</b></p>
+            <a href="mailto:renesanjuan3302@gmail.com">
+                <p id="email">renesanjuan3302@gmail.com</p>
+            </a>
+        </div>
+    </footer>
+
+<script src="index.js">
+</script>
+    
+</body>
+</html>

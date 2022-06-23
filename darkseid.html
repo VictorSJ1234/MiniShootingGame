@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shooting Game</title>
+    <link rel="stylesheet" type="text/css" href="darkseid.css">
+
+</head>
+<body>
+    <div id="mainFrame" onclick="gunShot.play()">
+        <div id="healthBar">HEALTH:</div>
+        <div id="remainingEnemies"><p id="numberOfEnemies">REMAINING ENEMIES: 5</p></div>
+        <div class="enemy" id="enemy1" onclick="shoot(this)"></div>
+        <div class="enemy" id="enemy2" onclick="shoot(this)"></div>
+        <div class="enemy" id="enemy3" onclick="shoot(this)"></div>
+        <div class="enemy" id="enemy4" onclick="shoot(this)"></div>
+        <div class="enemy" id="enemy5" onclick="shoot(this)"></div>
+        <button onclick="newGame()" id="game_button">TAP TO START</button>
+        <button onclick="restart()" id="won"><DIV>YOU WON!</DIV><DIV>TAP TO PLAY AGAIN</DIV></button>
+        <button onclick="over()" id="over"><DIV>YOU LOST!</DIV><DIV>TAP TO PLAY AGAIN</DIV></button>
+    </div>
+    
+    <script src="darkseid.js">
+    </script>
+</body>
+</html>

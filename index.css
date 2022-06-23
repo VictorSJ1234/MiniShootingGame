@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Montserrat:wght@300&display=swap');
+head, body{
+    width: 100%;
+    margin: 0px;
+    background-color: black;
+}
+header{
+    background-color: black;
+    height: 70px;
+    text-align: center;
+}
+
+/*footer*/
+.icons{
+    text-align: center;
+}
+.icons a{
+    text-decoration: none;
+    padding: 5px 15px;
+    color: black;
+    padding-bottom: 0;
+}
+.icons #facebook{
+    border: solid 2px black;
+    padding: 5px;
+    width: 50px;
+    background-color: gold;
+
+}
+.icons #instagram{
+    border: solid 2px black;
+    padding: 5px;
+    width: 50px;
+    background-color: gold;
+}
+.icons #twitter{
+    border: solid 2px black;
+    padding: 5px;
+    width: 50px;
+    background-color: gold;
+}
+.footerText{
+    text-align: center;
+    margin: 0px;
+}
+#email{
+    text-align: center;
+    margin: 0px;
+}
+footer{
+    background-color: gold;
+    color: black;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+/*end footer*/
+
+/*target list*/
+.members_container{
+    padding-top: 10px;
+    background-color: black;
+}
+#header2{
+    position: sticky;
+    top: 0;
+    margin: 0;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-color: gold;
+    padding: 20px;
+}
+#p1{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+.buttons{
+    width: 200px;
+    background-color: gold;
+    color: black;
+    font-weight: bold;
+    padding: 1em 2em;
+    border: solid 2px gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.buttons:hover{
+    background-color: crimson;
+    color: white;
+}
+#photo1:hover ~ #target1_button, #photo2:hover ~ #target2_button, #photo3:hover ~ #target3_button ,
+#photo4:hover ~ #target4_button ,#photo5:hover ~ #target5_button, #photo6:hover ~ #target6_button{
+    background-color: crimson;
+    color: white;
+}
+#photo3, #photo5, #photo3{
+    width: 200px;
+}
+#photo1, #photo2, #photo3, #photo4, #photo5, #photo6{
+    cursor: pointer;
+    border: solid 2px black;
+    padding: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.photos{
+    height: 350px;
+    padding: 0px 20px;
+    margin-top: 0px;
+    border-radius: 20px;
+}
+.targets {  
+    text-align: center ;
+    width: 90%;
+    margin: 0 auto;
+}
+.targets ul li{
+    display: inline-block;
+    list-style: none;
+    padding-bottom: 20px;
+}
+/*end target list*/
+
+/*for pop-up modal*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    margin: 10% auto;
+    width: 60%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+}
+
+.modal-header h2,
+.modal-footer h3 {
+    margin: 0;
+    padding: 5px;
+}
+
+.modal-header {
+    background: var(--modal-color);
+    padding: 15px;
+    color: #fff;
+    background-color: crimson;
+    color: white;
+    font-size: large;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.modal-body {
+    padding: 10px 20px;
+    background-color: #F2AA4CFF;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.modal-footer {
+    background: var(--modal-color);
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: gold;
+    color: black;
+}
+
+.close {
+    color: black;
+    float: right;
+    font-size: 30px;
+    color: black;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+h2{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+p{
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*button inside the modal*/
+.modal_buttons{
+    width: 600px;
+    height: 70px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    border: solid 2px yellow;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.modalButton_container{
+    text-align: center;
+}
+.modal_buttons:hover{
+    background-color: crimson;
+    color: black;
+}
+/*end pop-up modal*/

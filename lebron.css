@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Montserrat:wght@300&display=swap');
+/*background*/
+#mainFrame{
+    height: 600px;
+    width: 1100px;  
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    cursor:url(crosshair1.png), crosshair;
+
+    background-image: url(staples\ center.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background-color: black;
+
+}
+#background_container{
+    text-align: center;
+}
+
+.enemy{
+    background-image: url("lebronFace.png");
+    width: 200px;
+    height: 290px;
+    position: absolute;
+    bottom: -400px;
+    transition: all .5s;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-top-left-radius: 60%;
+    border-top-right-radius: 60%;
+}
+
+/*for the gun*/
+.enemy:after{
+    content: " ";
+    background-image: url("gun.png");
+    position: absolute;
+    width: 60px;
+    height: 100px;
+    left: 5px;
+    bottom: 40px;
+
+    transition: all .2s;
+}
+
+.enemy.shooting:after{
+    content: " * ";
+    text-align: center;
+    left: 0px;
+    color: orangered;
+
+    font-size: 5em;
+    transform: scale(2);
+}
+#enemy1{
+    left: 120px;
+}
+#enemy2{
+    left: 300px;
+}
+#enemy3{
+    left: 475px
+}
+#enemy4{
+    left: 650px;
+}
+#enemy5{
+    left: 850px
+}
+
+/*dead enemy*/
+.enemy.dead{
+    height: 0px;
+    display: none;
+    transition: 2s;
+}
+/*enemy showing*/
+.enemy.showing{
+    bottom: 0px;
+}
+/*
+enemy shooting
+.enemy.shooting{
+    background-color: red;
+}
+*/
+
+/*healthbar*/
+#healthBar {
+	position: absolute;
+	top: 0px;
+	left: 0;
+	height: 20px;
+	width: 100%;
+	background-color: crimson;
+	transition: width .5s;
+    color: white;
+    display: none;
+}
+#game_button, #won, #over{
+    height: 100%;
+    width: 100%;
+    background-color: crimson;
+    color: white;
+    font-size: 5em;
+    letter-spacing: -2px;
+
+    border: 0;
+    box-shadow: none;
+    cursor:url(crosshair1.png), crosshair;
+    opacity: 60%;
+}
+
+/*remaining ememies*/
+#numberOfEnemies{
+    position: absolute;
+    color: white;
+    height: 2px;
+    margin-top: 20px;
+    display: none;
+}
